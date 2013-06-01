@@ -1,0 +1,13 @@
+<!DOCTYPE cache PUBLIC
+        "-//GemStone Systems, Inc.//GemFire Declarative Caching 7.0//EN"
+        "http://www.gemstone.com/dtd/cache7_0.dtd">
+<cache>
+    <cache-server port="40404"/>
+    <!-- REPLICATE means copy from this region to others if available and it's necessary to allow function execution -->
+    <region name="numbersRegion" refid="REPLICATE"/>
+    <function-service>
+        <function>
+            <class-name>com.artechra.SimpleFunction</class-name>
+        </function>
+    </function-service>
+</cache>
