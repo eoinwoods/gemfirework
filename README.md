@@ -11,5 +11,5 @@ Once installed there are just two things to do:
 * From the "Client" director run the "loader.sh" to load data, "runreceiver.sh" to add items to the cache and retrieve what is in the cache.
 * From the "Client" directory run the "client.sh" script as "client.sh Caller" to call the server side function.
 
-The client is configured with a ClientCache, set to CACHING_PROXY mode.  This is to prove that function invocation results aren't cached as the timestamp comes back in the results and can be seen to change (and a message appears in the NessageServer logs in ./Server/numberserver).
+The client is configured with a ClientCache, with a single ClientRegion set to CACHING_PROXY mode.  This is to prove that function invocation results aren't cached as the timestamp comes back in the results and can be seen to change (and a message appears in the NessageServer logs in ./Server/numberserver).
 
